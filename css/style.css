@@ -1,0 +1,474 @@
+/* ===== General Styles ===== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* ===== Header & Navigation ===== */
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 1em 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #00bfff;
+}
+
+/* ===== Home Section ===== */
+#home {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(to right, #0073e6, #00bfff);
+  color: white;
+}
+
+.highlight {
+  color: #ffd700;
+}
+
+.button {
+  background: white;
+  color: #0073e6;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.button:hover {
+  background: #f1f1f1;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  background: #222;
+  color: white;
+  padding: 1em 0;
+  margin-top: 50px;
+}
+
+footer a {
+  color: #00bfff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #home {
+    padding: 50px 10px;
+  }
+}
+/* ===== About Section ===== */
+#about {
+  background: #fff;
+  padding: 60px 20px;
+  
+  max-width: 900px;
+  margin: 50px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#about h1, #about h2 {
+  text-align: center;
+  color: #0073e6;
+}
+
+#about p {
+  line-height: 1.6;
+  text-align: justify;
+}
+
+#about ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#about ul li {
+  background: #f1f1f1;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.skills ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+/* ===== Projects Section ===== */
+#projects {
+  background: #f8f9fa;
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 50px auto;
+  border-radius: 10px;
+}
+
+#projects h1 {
+  text-align: center;
+  color: #0073e6;
+  margin-bottom: 30px;
+}
+
+.project-card {
+  background: #ffffff;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.project-card h2 {
+  margin-top: 0;
+  color: #0073e6;
+}
+
+.project-card p {
+  line-height: 1.6;
+}
+
+.project-card .button {
+  background: #0073e6;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.project-card .button:hover {
+  background: #005bb5;
+}
+
+/* ===== Resume Section ===== */
+#resume {
+  max-width: 950px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#resume h1 {
+  text-align: center;
+  color: #0073e6;
+}
+
+.resume-box h2 {
+  color: #0073e6;
+  margin-top: 20px;
+}
+
+.resume-box ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.resume-box p, .resume-box li {
+  line-height: 1.6;
+}
+
+/* ===== Contact Section ===== */
+#contact {
+  max-width: 900px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#contact h1 {
+  text-align: center;
+  color: #0073e6;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #0073e6;
+  outline: none;
+}
+
+.contact-form button {
+  width: 160px;
+  padding: 12px;
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact-form button:hover {
+  background-color: #005bb5;
+}
+
+/* ===== Chatbot Widget ===== */
+#chatbot-container {
+  width: 300px;
+  height: 380px;
+  background: white;
+  border: 2px solid #0073e6;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  display: none;
+  flex-direction: column;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+#chatbot-header {
+  background: #0073e6;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 10px 10px 0 0;
+}
+
+#chatbot-messages {
+  height: 250px;
+  padding: 10px;
+  overflow-y: auto;
+  font-size: 14px;
+}
+
+.bot-msg {
+  background: #e6f2ff;
+  padding: 8px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.user-msg {
+  background: #d1ffd1;
+  padding: 8px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  text-align: right;
+}
+
+#chatbot-input-area {
+  display: flex;
+  border-top: 1px solid #ccc;
+}
+
+#chatbot-input {
+  flex: 1;
+  border: none;
+  padding: 10px;
+}
+
+#chatbot-send {
+  background: #0073e6;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+#chatbot-send:hover {
+  background: #005bb5;
+}
+
+#chatbot-toggle {
+  width: 60px;
+  height: 60px;
+  background: #0073e6;
+  color: white;
+  border-radius: 50%;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  cursor: pointer;
+}
+#chatbot-toggle:hover {
+  background: #005bb5;
+}
+
+/* ===== Fade-in Scroll Animation ===== */
+.fade-section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== QR Code Box ===== */
+#qr-box {
+  text-align: center;
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 300px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+#qr-box img {
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+}
+
+#qr-box h2 {
+  color: #0073e6;
+  margin-bottom: 10px;
+}
+
+/* ===== Home Top Layout with QR Code ===== */
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 300px;
+  padding: 20px;
+}
+
+.home-text {
+  flex: 1;
+}
+
+#qr-box {
+  width: 260px;
+  text-align: center;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+}
+
+#qr-box img {
+  width: 180px;
+  height: auto;
+  margin-top: 10px;
+}
+
+#qr-box h3 {
+  color: #0073e6;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+/* Mobile-Friendly Stacking */
+@media (max-width: 850px) {
+  .home-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #qr-box {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* ===== Profile Picture Box ===== */
+#profile-pic-box {
+  margin-right: 20px;
+  padding-top: 20px;
+  margin-top: 20px;
+  min-height: 200px;
+}
+
+#profile-pic {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #0073e6;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.20);
+  margin-top: 50px;
+}
+
+/* Mobile layout */
+@media (max-width: 850px) {
+  #profile-pic-box {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #profile-pic {
+    margin-bottom: 20px;
+  }
+}
+
+/* Force hide QR code on all mobile screens */
+@media screen and (max-width: 850px) {
+  #qr-box {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+
+/* Hide ANY element marked 'hide-mobile' on small screens */
+@media (max-width: 700px) {
+  .hide-mobile {
+    display: none !important;
+  }
+}
+
+@media (max-width: 700px) {
+  nav ul {
+    display: none;
+  }
+}
